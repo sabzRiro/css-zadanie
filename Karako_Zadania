@@ -1,136 +1,37 @@
-<!DOCTYPE html>
-<html lang="pl-PL">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularz - Programowanie i Sport</title>
-    <style>
-        body {
-            background-color: #FF6347; /* Czerwony tło */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #fff; /* Biały tekst */
-        }
-        h1 {
-            text-align: center;
-            color: #fff;
-        }
-        form {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #8B0000; /* Ciemnoczerwony formularz */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        input, select, textarea {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input[type="checkbox"], input[type="radio"] {
-            width: auto;
-        }
-        .checkbox-group, .radio-group {
-            display: flex;
-            flex-direction: column;
-        }
-        button {
-            background-color: #DC143C; /* Jasnoczerwony przycisk */
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #B22222; /* Ciemniejszy czerwony */
-        }
-    </style>
-</head>
-<body>
-    <h1>Formularz o Programowaniu i Sporcie</h1>
-    <form action="mailto:mkryniew@wp.pl" method="post" enctype="text/plain">
-        <!-- Dane użytkownika -->
-        <div class="form-group">
-            <label for="imie">Imię</label>
-            <input type="text" id="imie" name="imie" required>
-        </div>
-        <div class="form-group">
-            <label for="drugie-imie">Drugie imię</label>
-            <input type="text" id="drugie-imie" name="drugie">
-        </div>
-        <div class="form-group">
-            <label for="nazwisko">Nazwisko</label>
-            <input type="text" id="nazwisko" name="nazwisko" required>
-        </div>
-        <div class="form-group">
-            <label for="pseudonim">Pseudonim</label>
-            <input type="text" id="pseudonim" name="pseudonim">
-        </div>
+<!DOCTYPE html> 
+<html lang="pl-PL"> 
+<html> 
+     <head> 
+             <meta charset="utf-8"> 
+             <title>   Aliaksei Karako    </title> 
+     </head> 
+    <body> 
+Aliaksei Karako
+<p align="right"> <font color="red" size="3" face="Arial">  :) Zadowolenie, uśmiech </font> </p> <br> 
+<p align="center"> <font color="brown" size="4" face="Times New Roman"> ;) Mruganie </font> </p> <br> 
+<p align="center"> <font color="yellow" size="15" face="Courier New">  :| Brak emocji </font> </p> <br> 
+<p align="left"> <font color="orange" size="7" face="Arial">   :'( Płacz </font> </p> <br> 
+<p align="right"> <font color="blue" size="13" face="Courier New"> :D Szczęście </font> </p> <br> 
+<p align="left"> <font color="green" size="11" face="Verdana"> :( Smutek </font> </p> <br> 
+    </body> 
+<p align="right"> <font color="green" size="1" face="Arial"> Aliaksei </font> </p> <br>
+<p align="right"> <font color="green" size="2" face="Arial"> Aliaksei </font> </p> <br>
+<p align="right"> <font color="green" size="3" face="Arial"> Aliaksei </font> </p> <br>
+<p align="right"> <font color="green" size="4" face="Arial"> Aliaksei </font> </p> <br>
+<p align="right"> <font color="green" size="5" face="Arial"> Aliaksei </font> </p> <br>
+<p align="right"> <font color="green" size="6" face="Arial"> Aliaksei </font> </p> <br>
+<p align="right"> <font color="green" size="7" face="Arial"> Aliaksei </font> </p> <br>
+<h1>  Karako </h1><br> 
+<h2>  Karako </h2><br> 
+<h3>  Karako </h3><br> 
+<h4>  Karako </h4><br> 
+<h5>  Karako </h5><br> 
+<h6>  Karako </h6><br> 
 
-        <!-- Ulubiony język programowania -->
-        <div class="form-group">
-            <label for="jezyk-programowania">Jaki jest Twój ulubiony język programowania?</label>
-            <select id="jezyk-programowania" name="jezyk-programowania">
-                <option value="HTML">HTML</option>
-                <option value="Python">Python</option>
-                <option value="C++">C++</option>
-                <option value="Java">Java</option>
-                <option value="JavaScript">JavaScript</option>
-                <option value="SQL">SQL</option>
-            </select>
-        </div>
-
-        <!-- Ulubiony sport -->
-        <div class="form-group">
-            <label>Jaki jest Twój ulubiony sport?</label>
-            <div class="checkbox-group">
-                <label><input type="checkbox" name="sport" value="Piłka nożna"> Piłka nożna</label>
-                <label><input type="checkbox" name="sport" value="Koszykówka"> Koszykówka</label>
-                <label><input type="checkbox" name="sport" value="Tenis"> Tenis</label>
-                <label><input type="checkbox" name="sport" value="Inne"> Inne</label>
-            </div>
-            <textarea name="inny-sport" placeholder="Jeśli wybrałeś Inne, podaj szczegóły..." maxlength="100"></textarea>
-        </div>
-
-        <!-- Pytanie o programowanie -->
-        <div class="form-group">
-            <label>Czy umiesz programować?</label>
-            <div class="radio-group">
-                <label><input type="radio" name="programowanie" value="Tak" required> Tak</label>
-<label><input type="radio" name="programowanie" value="Nie"> Nie</label>
-                <label><input type="radio" name="programowanie" value="Nie wiem"> Nie wiem</label>
-            </div>
-        </div>
-
-        <!-- Dodatkowe pytania -->
-        <div class="form-group">
-            <label for="czas">Podaj czas</label>
-            <input type="time" id="czas" name="czas">
-        </div>
-        <div class="form-group">
-            <label for="data">Podaj datę</label>
-            <input type="date" id="data" name="data">
-        </div>
-        <div class="form-group">
-            <label for="kolor">Wybierz kolor</label>
-            <input type="color" id="kolor" name="kolor">
-        </div>
-
-        <div class="form-group">
-            <button type="submit">Wyślij formularz</button>
-        </div>
-    </form>
-</body>
-</html>
+<p align="left"> <u> 80-870 Gdańsk Reja 25 </u> </p> <br>
+<p align="center"> <font color="yellow" size="7" face="Arial"> Ulubiony aktor: Cezariusz Pazura. </font> </p> <br>
+<p align="center"> <font color="gray" size="4" face="Arial"> Ulubiony zespół muzyczny: </font> <font color="red" size="7" face="Arial"> ACDC. </font> </p> <br> 
+<p align="center"> <font color="green" size="2" face="Arial"> Data urodzenia: 30 Grudnia 2008. </font> </p> <br>
+<p align="left"> <font color="black" size="3" face="Arial">  H2SO4 </font> </p> <br>
+<p align="left"> <font color="black" size="2" face="Arial"> x*x=x2 </font> </p> <br>
+ </html>
